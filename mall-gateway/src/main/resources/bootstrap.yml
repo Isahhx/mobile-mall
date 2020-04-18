@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: mall-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.102.106.140:8848
+      #        server-addr: localhost:8848
+      config:
+        server-addr: 47.102.106.140:8848
+        #        server-addr: localhost:8848
+        file-extension: yml
+        namespace: f71177fa-2057-4c25-9543-5b8031118f5c
+        #        namespace: 1327afe2-ab66-41fe-8b10-b5b233716f14
+        name: mall-gateway
+
+
+
+management: #开启SpringBoot Admin的监控
+  endpoints:
+    web:
+      exposure:
+        include: health,instance
+  endpoint:
+    health:
+      show-details: always
+logging:
+  level:
+    org.springframework.cloud.gateway: debug
+

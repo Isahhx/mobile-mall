@@ -12,7 +12,6 @@
     <modules>
         <module>mall-common</module>
         <module>mall-mbg</module>
-        <module>mall-demo</module>
         <module>mall-admin</module>
         <module>mall-search</module>
         <module>mall-portal</module>
